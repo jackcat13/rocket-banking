@@ -1,5 +1,7 @@
 # Rust + Rocket sample project
 
+Code coverage : [![codecov](https://codecov.io/gh/jackcat13/rocket-banking/branch/main/graph/badge.svg?token=f7d9ac1a-2e90-4f85-ad5d-badfd30ef4f0)](https://codecov.io/gh/jackcat13/rocket-banking)
+
 ## Purpose
 
 The purpose of this project is to showcase a functional example of a REST micro-service. It aims to work as an aggregator of multiple bank accounts balances in order to make fast the visualisation of several bank accounts.
