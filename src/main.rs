@@ -1,4 +1,5 @@
-#[macro_use] extern crate rocket;
+#[macro_use]
+extern crate rocket;
 
 use rocket::serde::json::Json;
 
@@ -6,9 +7,9 @@ use crate::model::bank::Bank;
 use crate::model::credentials::Credentials;
 use crate::service::bank_service::banks_aggregate;
 
+mod client;
 mod model;
 mod service;
-mod client;
 
 #[get("/")]
 fn index() -> &'static str {

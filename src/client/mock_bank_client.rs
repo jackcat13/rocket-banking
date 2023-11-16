@@ -2,7 +2,7 @@ use crate::client::bank_client::BankClientDelegate;
 use crate::model::bank::Bank;
 use crate::model::credentials::Credential;
 
-pub struct MockBankClient{}
+pub struct MockBankClient {}
 
 impl BankClientDelegate for MockBankClient {
     fn get_bank_account(&self, _: &Credential) -> Bank {

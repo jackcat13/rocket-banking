@@ -18,7 +18,7 @@ jobs:
           command: check
 
   test:
-    name: Test Suite
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -27,10 +27,9 @@ jobs:
           profile: minimal
           toolchain: stable
           override: true
-      - uses: jetli/wasm-pack-action@v0.4.0
+      - uses: actions-rs/cargo@v1
         with:
-          version: 'latest'
-      - run: wasm-pack test --node
+          command: test
 
   coverage:
     name: Upload coverage reports to Codecov
