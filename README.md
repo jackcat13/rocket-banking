@@ -22,6 +22,27 @@ B --> |Aggregated accounts details| A
 
 :notebook: Each BANK credential is provided in the HTTP request header `credentials`. (TODO : wrap credentials in an encrypted token. Not done yet because it is an example project not meant for production).
 
-## Getting started
+## Run the microservice
 
-TODO
+### Using docker compose
+
+1. [Install docker](https://docs.docker.com/desktop/)
+2. Clone this repository
+3. go to `compose` folder
+4. Run `docker compose up` command
+
+### Build from sources
+
+1. [Install Rust](https://www.rust-lang.org/tools/install)
+2. Clone this repository
+3. Run `cargo run` command
+
+:warning: If any third party is required (like a DB or another dependant service), these won't be deployed by default.
+
+## Test the microservice
+
+Once the microservice is started, you can test it with the Mocked bank account using the following command :
+
+```sh
+curl http://localhost:8000/banks -H 'credentials: { "basic" : [{ "identifier": "1", "password": "1", "bank": "Mock" }] }'
+```

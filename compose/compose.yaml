@@ -1,0 +1,3 @@
+services:
+  rocket-banking:
+    image: "someawesomedockerid/rocket-banking:latest"
