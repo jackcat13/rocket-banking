@@ -12,8 +12,8 @@ pub struct Credentials {
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Credential {
-    identifier: String,
-    password: String,
+    pub(crate) identifier: String,
+    pub(crate) password: String,
     pub bank: BankEnum,
 }
 
