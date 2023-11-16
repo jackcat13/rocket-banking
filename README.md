@@ -23,3 +23,7 @@ B --> |Aggregated accounts details| A
 ## Getting started
 
 TODO
+
+## Tests
+
+This project is tested and metrics are available at following location :
